@@ -24,30 +24,56 @@
     }
 body {
   background-color: #eff0f3;
+  display:flex;
+  justify-content: center;
 }
-
+.banner{
+  display: flex;
+  justify-content: center;
+}
 .name {
   color: #d9376e;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons a {
   color: #0d0d0d;
   text-decoration: none;
-}
 
+}
+.social-icons {
+  display: flex;
+  flex-grow: 0;
+  justify-content: space-around;
+}
 .link {
-  background-color: #eff0f3;
+  background-color: #ff8e3c;
+  display:flex;
+  align-items: center;
+  padding: 5px;
 }
 
 .link a {
-  color: #ff8e3c;
+  color: #0d0d0d;
   text-decoration: none;
+  text-align: center;
+  flex-grow:1;
 }
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+ flex-grow:1;
+}
+*{ border: thin red solid}
   </style>
 </head>
 
 
 <body>
+  <div class="items">
   <div class="banner">
     <img src="/thumbnails/Ariana_Kim.jpg" alt="Photo of Ariana Kim" class="banner-image">
     
@@ -60,6 +86,7 @@ body {
   <div class="social-icons">
     <a href="https://www.linkedin.com/in/arianakim2/" target="_blank">Linkedin
     </a>
+    <a href="https://www.instagram.com/ariana_banana__/" target="_blank">Instagram</a>
 
   </div>
 
@@ -73,7 +100,7 @@ body {
     <img src="thumbnails/chicago_booth.png" class="thumbnail_photo">
     <a href="https://www.chicagobooth.edu/" target="_blank">My School</a>
   </div>
-
+</div>
 
 </body>
 </html>
